@@ -18,21 +18,17 @@ module.exports = {
         url: `https://github.com/sw-yx/swyxdotio`,
       },
     ],
+    keywords: 'gatsby, theme',
+    language: 'en',
+    feed_url: 'https://swyx.io/rss.xml',
+    image_url: 'https://swyx.io/avatar.jpg',
   },
   plugins: [
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: '@daniel.husar/gatsby-theme-spring',
       options: {
-        path: 'content/collections/drafts',
-        name: "draftPosts",
-      },
-    },
-    {
-      resolve: '@narative/gatsby-theme-novela',
-      options: {
-        contentPosts: 'content/posts',
-        contentAuthors: 'content/authors',
-        basePath: '/writing',
+        paginationOffset: 5,
+        author: 'swyx',
       },
     },
     {
