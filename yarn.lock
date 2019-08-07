@@ -1256,16 +1256,16 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@narative/gatsby-theme-novela@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@narative/gatsby-theme-novela/-/gatsby-theme-novela-0.0.3.tgz#197fe5eed10c476216b4b6a9e9acd05983f06732"
-  integrity sha512-9BPiEMpUfbhBSayIp1jzQlDcOsvQ5UDH+VGX4Xp+dU0BHUgXQVS2oq8Ke9xg5dwUzCvjlwacWpuzgOyiTkthEg==
+"@narative/gatsby-theme-novela@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@narative/gatsby-theme-novela/-/gatsby-theme-novela-0.0.8.tgz#4dfdac00d6a489074bb39a4cc51b3efd3f8ca04f"
+  integrity sha512-GvKRhK9yrAn6AP8DO0FahmAzFof+p75zYt73Mgu7MDzAT/4xDRShALzD6onPwhhGoaA+TaMiqM9egQJNTv2QrQ==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
     "@mdx-js/mdx" "^1.1.0"
     "@mdx-js/react" "^1.0.27"
-    "@theme-ui/prism" "^0.2.21"
+    adm-zip "^0.4.13"
     babel-plugin-emotion "^10.0.14"
     gatsby-image "^2.2.7"
     gatsby-mdx "^1.0.0"
@@ -1289,9 +1289,11 @@
     gatsby-transformer-sharp "^2.2.4"
     gatsby-transformer-yaml "^2.2.4"
     lodash "^4.17.15"
+    prism-react-renderer "^0.1.7"
     react-helmet "^5.2.1"
     react-outside-click-handler "^1.2.4"
     remark-slug "^5.1.2"
+    request "^2.88.0"
     theme-ui "^0.2.21"
     typeface-merriweather "^0.0.72"
 
@@ -1363,13 +1365,6 @@
   integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
   dependencies:
     defer-to-connect "^1.0.1"
-
-"@theme-ui/prism@^0.2.21":
-  version "0.2.29"
-  resolved "https://registry.yarnpkg.com/@theme-ui/prism/-/prism-0.2.29.tgz#89804f09187859e2fcf62ada35f215ca2ea8da71"
-  integrity sha512-iveu3jP8uR2SEO3YS83d8gsYaMiS/H5qYiuFqizOLYPV+cPUxvOAFCmFnRi5aqqKy6lrFwpCtmyw5/42AXbS9A==
-  dependencies:
-    prism-react-renderer "^0.1.7"
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -1689,6 +1684,11 @@ address@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/address/-/address-1.1.0.tgz#ef8e047847fcd2c5b6f50c16965f924fd99fe709"
   integrity sha512-4diPfzWbLEIElVG4AnqP+00SULlPzNuyJFNnmMrLgyaxG6tZXJ1sn7mjBu4fHrJE+Yp/jgylOweJn2xsLMFggQ==
+
+adm-zip@^0.4.13:
+  version "0.4.13"
+  resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.4.13.tgz#597e2f8cc3672151e1307d3e95cddbc75672314a"
+  integrity sha512-fERNJX8sOXfel6qCBCMPvZLzENBEhZTzKqg6vrOW5pvoEaQuJhRU4ndTAh6lHOxn1I6jnz2NHra56ZODM751uw==
 
 after@0.8.2:
   version "0.8.2"
@@ -11164,7 +11164,7 @@ replace-ext@1.0.0, replace-ext@^1.0.0:
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
   integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
 
-request@^2.83.0:
+request@^2.83.0, request@^2.88.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   integrity sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
