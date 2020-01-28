@@ -43,7 +43,7 @@
     margin: 0 auto;
   }
   a {
-    color: var(--brand-color-primary);
+    color: var(--link-color);
   }
   .postlist__meta {
     font-size: 1.125rem;

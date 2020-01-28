@@ -38,7 +38,7 @@
       grid-template-columns: 1fr;
     }
   }
-  li {
+  .allTalks li {
     margin-bottom: 1.5rem;
     overflow: scroll;
     /* background: linear-gradient(45deg, #337bd8, #6433d8);
@@ -52,7 +52,7 @@
     margin: 0 auto;
   }
   a {
-    color: var(--brand-color-primary);
+    color: var(--link-color);
   }
   .postlist__meta {
     font-size: 1.125rem;

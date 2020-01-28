@@ -19,10 +19,10 @@
     if (typeof document === 'undefined') return // SSR
     var ss = document.getElementById("unique-stylesheet-id");
     if (!ss) return // not rendered yet
-    let string = ``
-    if ($themeStore.bgColor) string += `--bg-color: ${$themeStore.bgColor};`
-    if ($themeStore.textColor) string += `--text-color: ${$themeStore.textColor};`
-    if ($themeStore.linkColor) string += `--link-color: ${$themeStore.linkColor};`
+    let string = $themeStore.toString()
+    // if ($themeStore.bgColor) string += `--bg-color: ${$themeStore.bgColor};`
+    // if ($themeStore.textColor) string += `--text-color: ${$themeStore.textColor};`
+    // if ($themeStore.linkColor) string += `--link-color: ${$themeStore.linkColor};`
     ss.innerHTML = `html { ${string} }`
   }
 </script>

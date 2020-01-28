@@ -79,7 +79,7 @@
     width: 40%;
     min-width: 200px;
     color: var(--link-color);
-    background: var(--bg-color-secondary);
+    background: var(--background-color-secondary);
     /* font-size: 0.8em; */
     /* position: sticky; */
     padding: 1em 2em;
